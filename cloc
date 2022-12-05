@@ -9182,6 +9182,7 @@ sub set_constants {                          # {{{1
             'ttcn2'       => 'TTCN'                  ,
             'ttcn3'       => 'TTCN'                  ,
             'ttcnpp'      => 'TTCN'                  ,
+            'ttl'         => 'TeraTermMacro'         ,
             'sdl'         => 'TNSDL'                 ,
             'ssc'         => 'TNSDL'                 ,
             'sdt'         => 'TNSDL'                 ,
@@ -10844,6 +10845,11 @@ sub set_constants {                          # {{{1
     'TEAL'               => [
                                 [ 'remove_matches'      , '^\s*//' ],
                             ],
+    'TeraTermMacro'      => [
+                                [ 'remove_matches'      , '^\s*;'  ],
+                                [ 'call_regexp_common'  , 'C'      ],
+                                [ 'remove_inline'       , ';.*$'   ],
+                            ],
     'Teamcenter met'     => [   [ 'call_regexp_common'  , 'C'      ], ],
     'Teamcenter mth'     => [   [ 'remove_matches'      , '^\s*#'  ], ],
     'Templ'              => [
@@ -11224,6 +11230,7 @@ sub set_constants {                          # {{{1
     'Stata'              =>     '///$'          ,
     'Stylus'             =>     '\\\\$'         ,
     'Tcl/Tk'             =>     '\\\\$'         ,
+    'TeraTermMacro'      =>     '\\\\$'         ,
     'TTCN'               =>     '\\\\$'         ,
     'TypeScript'         =>     '\\\\$'         ,
     'lex'                =>     '\\\\$'         ,
@@ -11653,6 +11660,7 @@ sub set_constants {                          # {{{1
     'TableGen'                     =>   2.00,
     'Tcl/Tk'                       =>   4.00,
     'TEAL'                         =>   0.50,
+    'TeraTermMacro'                =>   0.63, #same as DOS Batch
     'Teamcenter def'               =>   1.00,
     'Teamcenter met'               =>   1.00,
     'Teamcenter mth'               =>   1.00,
