@@ -1408,6 +1408,11 @@ my @Tests = (
                     'args' => '../tests/inputs/htlc.teal',
                 },
                 {
+                    'name' => 'Tera Term Macro',
+                    'ref'  => '../tests/outputs/teraterm_macro.ttl.yaml',
+                    'args' => '../tests/inputs/teraterm_macro.ttl',
+                },
+                {
                     'name' => 'Templ',
                     'ref'  => '../tests/outputs/templ_example.templ.yaml',
                     'args' => '../tests/inputs/templ_example.templ'

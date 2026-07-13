@@ -1,0 +1,9 @@
+; Tera Term Language
+
+host = 'example.com'
+connect host
+sendln 'status'
+
+/* Wait for the prompt. */
+wait '$'
+end
