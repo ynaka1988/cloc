@@ -12392,7 +12392,7 @@ sub set_constants {                          # {{{1
     'TableGen'                     =>   2.00,
     'Tcl/Tk'                       =>   4.00,
     'TEAL'                         =>   0.50,
-    'TeraTermMacro'                =>   0.63, #same as DOS Batch
+    'TeraTermMacro'                =>   2.76, # BASIC-like per the Tera Term manual
     'Teamcenter def'               =>   1.00,
     'Teamcenter met'               =>   1.00,
     'Teamcenter mth'               =>   1.00,
