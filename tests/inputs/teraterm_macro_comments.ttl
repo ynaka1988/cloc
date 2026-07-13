@@ -1,0 +1,16 @@
+; Full-line semicolon comment.
+
+host = 'example.com'
+messagebox 'semi;colon' 'title'
+messagebox '/* not a comment */' 'title'
+connect host ; inline semicolon comment
+
+/* Multi-line block comment
+   spanning two lines. */
+sendln 'status'
+/* One-line block comment. */
+sendln 'before' /* inline block comment */
+wait '$'
+
+; Another full-line comment.
+end

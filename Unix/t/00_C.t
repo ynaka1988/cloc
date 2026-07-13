@@ -1413,6 +1413,11 @@ my @Tests = (
                     'args' => '../tests/inputs/teraterm_macro.ttl',
                 },
                 {
+                    'name' => 'Tera Term Macro comments',
+                    'ref'  => '../tests/outputs/teraterm_macro_comments.ttl.yaml',
+                    'args' => '../tests/inputs/teraterm_macro_comments.ttl',
+                },
+                {
                     'name' => 'Templ',
                     'ref'  => '../tests/outputs/templ_example.templ.yaml',
                     'args' => '../tests/inputs/templ_example.templ'
